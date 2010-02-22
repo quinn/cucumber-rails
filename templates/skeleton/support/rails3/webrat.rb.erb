@@ -7,8 +7,9 @@ Webrat.configure do |config|
 end
 
 class Cucumber::Rails::World
+  include Rack::Test::Methods  
   include Webrat::Methods
-  include Webrat::Matchers
+  include Webrat::Matchers  
 end                
 
 
