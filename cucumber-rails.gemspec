@@ -70,7 +70,6 @@ Gem::Specification.new do |s|
      "templates/skeleton/support/rails3/env_config.rb.erb",
      "templates/skeleton/support/rails3/env_spork.rb.erb",
      "templates/skeleton/support/rails3/webrat.rb.erb",
-     "templates/skeleton/support/rails_spork.rb.erb",
      "templates/skeleton/tasks/cucumber.rake.erb"
   ]
   s.homepage = %q{http://github.com/aslakhellesoy/cucumber-rails}
