@@ -4,7 +4,7 @@ require 'spork'
  
 Spork.prefork do
   <%= embed_template('support/rails2/env_config.rb.erb', '  ') %>
-  <%= embed_file("support/rails2/#{driver}.rb", '  ') %>
+  <%= embed_template("support/rails2/#{driver}.rb.erb", '  ') %>
 end
  
 Spork.each_run do
