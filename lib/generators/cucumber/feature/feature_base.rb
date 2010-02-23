@@ -22,6 +22,10 @@ module Cucumber
         m.gsub_file 'features/support/paths.rb', /'\/'/mi do |match|
           "#{match}\n    when /the new #{singular_name} page/\n      new_#{singular_name}_path\n"
         end
+
+        m.gsub_file 'features/support/paths.rb', /'\/'/mi do |match|
+          "#{match}\n    when /the #{plural_name} page/\n      #{plural_name}_path\n"
+        end
       end
 
     end
